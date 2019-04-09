@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Enter 1st number"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/ET1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@+id/TV1"
+        />
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Enter 2nd number"
+        android:textSize="20dp"
+        android:layout_below="@+id/TV1"
+        />
+    <EditText
+        android:id="@+id/ET2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@+id/TV2"
+        android:layout_below="@+id/ET1"
+        />
+
+    <Button
+        android:id="@+id/BT1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Calc"
+        android:layout_below="@+id/ET2"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/BT2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Close"
+        android:layout_below="@+id/BT1"
+        android:layout_centerInParent="true"
+
+        />
+
+
+</RelativeLayout>
